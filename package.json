@@ -4,7 +4,8 @@
   "description": "An example project",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "build": "rollup -c",
+    "watch": "rollup -c -w"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/AnneGoebels/ifcJsToolingExample/issues"
   },
-  "homepage": "https://github.com/AnneGoebels/ifcJsToolingExample#readme"
+  "homepage": "https://github.com/AnneGoebels/ifcJsToolingExample#readme",
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^13.3.0",
+    "rollup": "^2.75.7"
+  }
 }
